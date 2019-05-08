@@ -1,0 +1,16 @@
+<?xml	version="1.0"?>	
+<odoo>	
+	<!--	Action	untuk membuka list	-->	
+	<act_window	id="action_myconference"	
+			name="Manage Conferences"	
+			res_model="myconferences.myconf"
+			view_mode="tree,form"	/>	
+	<!--	Menu	item untuk membuka list	-->	
+	<menuitem id="menu_myconference"	
+			name="Seminar"	
+			action="action_myconference"	/>
+
+	<menuitem id="menu_anak_myconference"	
+			name="sub menu"	
+			parent="menu_myconference"	/>	
+</odoo>
